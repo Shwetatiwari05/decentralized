@@ -7,89 +7,110 @@
         <link rel="stylesheet" href="main.css" type="text/css">
     </head>
     <body>
-        <h1>Hello world!</h1>
-
-        <hr>  
-        <nav>
-            <ul>
+        <header>
+            <h1>Hello world!</h1>
+            <nav aria-label="Primary navigation">
+                <ul>
                 <li> <a href="#HTML">Learning about HTML</a></li>
                 <li> <a href="#Vacation">Planning a Vacation</a></li>
             </ul>
-        </nav>
-
-        <section id="HTML">
-        <h2>I am ready to learn HTML</h2>
-        <p>This is my first web page</p>
-        <img src="images/html_logo.png" alt="HTML5 Logo" title="HTML5 logo" width="230" height="250">
-        <figure>
-            <figcaption>An Example of HTML Code</figcaption>
-            <p><code>
-                &lt;h1&gt;Hello World!&lt;h1&gt;
-            </code></p>
-        </figure>
-
+            </nav>
+        </header>
 
         <hr>
 
-        <h3>My daily schedule</h3>
-            <p>My schedule is as follows</p>
-        <ul>
-                <li>I learn about web dev</li>
-                <li>I plan about my schedule.</li>
-                <li>I take resources from <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org/en-US/">MDN</a></abbr>.</li>
-        </ul>
-        </section>
-        
-            
-        <hr>
+            <main>
+                <article id="HTML">
+                    <h2>HTML</h2>
+                <section>
+                    <h3>I am ready to learn HTML</h3>
+                    <p>This is my first web page</p>
+                    <img src="images/html_logo.png" alt="HTML5 Logo" title="HTML5 logo" width="230" height="250">
+                <figure>
+                    <figcaption>An Example of HTML Code</figcaption>
+                    <p><code>
+                        &lt;h1&gt;Hello World!&lt;h1&gt;
+                    </code></p>
+                </figure>
+                </section>
 
-        <section id="Vacation">
-            <h3>I am planning for a vacation.</h3>
-            <p>I have been working really hard and now <em>I really need a getaway</em></p>
-    
-            <h4><strong>Places I'd like to visit</strong></h4>
-            <!--TODO:ADD MORE PLACES HERE-->
-            <ul>
-                <li>
-                    <p>Manali</p>
-                    <img src="images/manali.png" alt="Manali" width="400" height="225" loading="lazy">
-                </li>
-                <li>
-                    <p>Jaipur</p>
-                    <img src="images/JAIPUR.png" alt="Jaipur" width="400" height="225" loading="lazy"></li>
-                <li>
-                    <p>Sikkim</p>
-                    <img src="images/sikkim.png" alt="Sikkim" width="400" height="225" loading="lazy"><br></li>
-                <li>
-                    <p><abbr title="United states of America">USA</abbr></p>
-                <img src="images/USA.png" alt="USA" width="400" height="225" loading="lazy">
-                    <figure>    
-                        <figcaption>Statue Of Liberty</figcaption>
-                    </figure>
+
+                <hr>
+
+                <section>
+                    <h3>My daily schedule</h3>
+                    <p>My schedule is as follows</p>
+                <ul>
+                        <li>I learn about web dev</li>
+                        <li>I plan about my schedule.</li>
+                        <li>I start to code at <time datetime="01:00"> 1am </time> code for <time datetime="PT3H">3 hrs</time> every day.</li>
+                        <li>I take resources from <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org/en-US/">MDN</a></abbr>.</li>
+                </ul>
+                        <aside>
+                            <details>
+                                <summary>
+                                    What is the full form of HTML?
+                                </summary>
+                                <p>
+                                    HyperText Markup Language
+                                </p>
+                            </details>
+                        </aside>
+                </section>
+            </article>
+                
                     
-            </li>
-            </ul>
-            <p><strong>I have heard good things about going here:</strong></p> 
-            <address>Qtr no.-E/13,
-                     <br>NCH Colony, Kanjurmarg (W),
-                     <br>Mumbai-78</address>
-                     <figure><img src="images/vacation.png" alt="vacation" width="400" height="225" loading="lazy"></figure>
+                <hr>
+
+                <article id="Vacation">
+                    <h3>I am planning for a vacation.</h3>
+                    <p>I have been working really hard and now <em>I really need a getaway</em></p>
+            
+                    <h4><strong>Places I'd like to visit</strong></h4>
+                    <!--TODO:ADD MORE PLACES HERE-->
+                    <ul>
+                        <li>
+                            <p>Manali</p>
+                            <img src="images/manali.png" alt="Manali" width="400" height="225" loading="lazy">
+                        </li>
+                        <li>
+                            <p>Jaipur</p>
+                            <img src="images/JAIPUR.png" alt="Jaipur" width="400" height="225" loading="lazy"></li>
+                        <li>
+                            <p>Sikkim</p>
+                            <img src="images/sikkim.png" alt="Sikkim" width="400" height="225" loading="lazy"><br></li>
+                        <li>
+                            <p><abbr title="United states of America">USA</abbr></p>
+                        <img src="images/USA.png" alt="USA" width="400" height="225" loading="lazy">
+                            <figure>    
+                                <figcaption>Statue Of Liberty</figcaption>
+                            </figure>
+                            
+                    </li>
+                    </ul>
+                    <p><strong>I have heard good things about going here:</strong></p> 
+                    <address>Qtr no.-E/13,
+                            <br>NCH Colony, Kanjurmarg (W),
+                            <br>Mumbai-78</address>
+                            <figure><img src="images/vacation.png" alt="vacation" width="400" height="225" loading="lazy"></figure>
+            
+                    <h4>Places I want to avoid</h4>
+                    <dl>
+                        <dt>North Pole</dt>
+                        <dd>Its too <strong>cold</strong> for me.</dd>
+                        <dt>South Pole</dt>
+                        <dd>This is also <strong>too cold</strong> for me.</dd>
+                    </dl>
+                </article>
+        </main>
     
-            <h4>Places I want to avoid</h4>
-            <dl>
-                <dt>North Pole</dt>
-                <dd>Its too <strong>cold</strong> for me.</dd>
-                <dt>South Pole</dt>
-                <dd>This is also <strong>too cold</strong> for me.</dd>
-            </dl>
-        </section>
- 
-        <hr>
+            <hr>
 
-        &lt;&lt;&lt; &copy;<a href="about.html">Shweta Tiwari</a> &gt;&gt;&gt;
+            <footer>
+                 <p>&lt;&lt;&lt; &copy;<a href="about.html">Shweta Tiwari</a> &gt;&gt;&gt;</p>
+                <p><a href="#">Back To Top</a></p>
+                <p><a href="/">Back To Home</a></p>
+            </footer>
 
-        <p><a href="#">Back To Top</a></p>
-        <p><a href="/">Back To Home</a></p>
-
-    </body>
-</html>
+        </body>
+    </html>
