@@ -160,7 +160,28 @@
                         <p>I'd really like to hear from you</p>
 
                         <form action="https://httpbin.org/get" method="get">
-                            <label for="firstname">First Name</label>
+                        <p> <label for="firstname">First Name</label>
+                            <input type="text" name="firstname" id="firstname" placeholder="Jane" autocomplete="on"
+                            required>
+                        </p>
+                        <p>
+                            <label for="lastname">Last Name</label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Smith" autocomplete="on"
+                            required>
+                        </p>
+                        <p>
+                            <label for="Password">Password</label>
+                            <input type="password" name="Password" id="Password" placeholder="xyz@123" required>
+                        </p>
+                        <p>
+                            <label for="Phone">Phone number</label>
+                            <input type="tel" name="Phone number" id="Phone" placeholder="5555555555" autocomplete="on"
+                            pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                        </p>
+                        <p>
+                            <label for="Year">Year of Birth</label>
+                            <input type="number" name="Year" id="Year" min="1950" max="2025" step="10" value="2025">
+                        </p>
                         </form>
                     </article>
             </main>
